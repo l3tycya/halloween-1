@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: rgb(50, 49, 51);
+    background-color: rgb(206, 129, 57);
     color: #ffffff;
     padding: 12px;
     border: none;
@@ -45,8 +45,11 @@ main {
 }
 
 .cards {
+    justify-content: center;
     display:flex;
     gap: 50px;
+    padding-left:5%;
+    height: 600px;
 }
 
 .card {
@@ -55,7 +58,7 @@ main {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s;
-    justify-content:space-evenly;
+    height: 590px;
 }
 
 .card:hover {
@@ -63,32 +66,42 @@ main {
 }
 
 .card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+    width: 90%;
+    border-radius: 10px;
+    justify-items: center;
+    height: 430px;
 }
 
-box-busca{ 
+.card button{
+    border-radius: 8px;
+    background-color:#e7750a;
+    border-color: rgb(150, 67, 12);
+    color:white;
+    width: 100px;
+    height: 40px;
+}
 
+.box-busca{ 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    padding:50%;
+   
+    padding:20px;
 }
 
 
 .search-box-input::placeholder {
     
     color:#ffffff;
+    display:flex;
     opacity: 0.6;
+    justify-content:center;
 
 }
 
 /* Chrome, Opera ySafari */
-.search-box-input::-webkit-input-placeholder { color: #ffffff; }
+.search-box-input::-webkit-input-placeholder { color: #030000; }
 
 /* Firefox 19+ */
 .search-box-input::-moz-placeholder { color: #ffffff; }
@@ -97,11 +110,11 @@ box-busca{
 .search-box-input:-ms-input-placeholder { color: #ffffff; }
 
 
-.search-box form {
+.search-box  {
     
     display: flex;
     border-radius: 50px;
-    background-color: #4c4c4c;
+    background-color: #ffffff;
     height: 50px;
     width: 430px;;
 
@@ -119,7 +132,7 @@ box-busca{
 
     outline: 0;
     font-size: 1.2em;
-    color: #fff;
+    color: #030000;
     width: 0;
     padding: 0;
     border: none;
@@ -134,7 +147,7 @@ box-busca{
    border-radius: 50%;
    width: 45px;
    height: 45px;
-   background-color: #14c0c7;
+   background-color: #63d367;
    border: none;
    cursor: pointer;
    transition: .3s;
@@ -150,16 +163,7 @@ box-busca{
 .search-box-icone {
 
     margin: auto;
-    color: #fff;
-
-}
-
-
-@media screen and (min-width: 400px){
-    
-    .search-box:hover .search-box-input {
-        width: 360px;
-    }
+    color: #0f0101;
 
 }
 
@@ -181,8 +185,11 @@ img {
   margin: 3%;
 }
 .hero{
-display:center;
-padding-left: 6em;
-width: 200px;
+display:flex;
+flex-direction:column;
+padding-left: 6em;;
 justify-content:center;
+align-items: center;
+width: 100%;
+padding:20px;
 }
